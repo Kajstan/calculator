@@ -2,16 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first value");
         int x = scanner.nextInt();
         System.out.println("Enter secon value");
-        int y =scanner.nextInt();
-        System.out.println("What do you want to do?\n1.addition\n2.substraction\n3.multiplication\n4.dividing");
-        int select= scanner.nextInt();
-        switch (select){
+        int y = scanner.nextInt();
+        System.out.println("What do you want to do?\nSelect:\n1.addition\n2.substraction\n3.multiplication\n4.dividing");
+        int select = scanner.nextInt();
+        switch (select) {
             case 1:
-                System.out.println();
+                System.out.println("Result " + (x + y));
+                break;
+            case 2:
+                System.out.println("Result " + (x - y));
+                break;
+            case 3:
+                System.out.println("Result " + (x * y));
+                break;
+            case 4:
+                System.out.println("Result " + (x / y));
+                break;
         }
-      }
     }
+}
